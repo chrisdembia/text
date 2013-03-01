@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+
+\begin{document}
+
+\begin{align}
+\begin{bmatrix}
+(m_1 + m_2 + m_3) l_1^2 & (m_2 + m_3) l_1 l_2 \cos{(q_2-q_1)} & m_3 l_1 l_3 \cos{(q_3-q_1)} \\
+(m_2 + m_3) l_1 l_2 \cos{(q_2-q_3)} & (m_2 + m_3) l_2^2 & m_3 l_2 l_3 \cos{(q_3-q_2)} \\
+m_3 l_1 l_3 \cos{(q_3-q_1)} & m_3 l_2 l_3 \cos{(q_3-q_2)} & m_3 l_3^2
+\end{bmatrix}
+\begin{bmatrix}
+    \ddot{q}_1 \\
+    \ddot{q}_2 \\
+    \ddot{q}_3
+\end{bmatrix}
++
+\begin{bmatrix}
+    -(m_2 +m_3) l_1 l_2 \sin{(q_2-q_1)} \dot{q}_2^2 - m_3 l_1 l_3 \sin{(q_3-q_1)} \dot{q}_3^2 \\
+    (m_2 + m_3) l_1 l_2 \sin{(q_2-q_1)} \dot{q}_1^2 - m_3 l_2 l_3 \sin{(q_3-q_2)} \dot{q}_3^2 \\
+    m_3 l_1 l_3 \sin{(q_3-q_1)} \dot{q}_1^2 + m_3 l_2 l_3 \sin{(q_3-q_2)} \dot{q}_2^2
+\end{bmatrix}
++
+g
+\begin{bmatrix}
+    (m_1 + m_2 + m_3) l_1 \cos{q1} \\
+    (m_2 + m_3) l_2 \cos{q2} \\
+    m_3 l_3 \cos{q3}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    ? \\
+    ? \\
+    T_3
+\end{bmatrix}
+\end{align}
+
+\end{document}
